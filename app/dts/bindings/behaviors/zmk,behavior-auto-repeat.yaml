@@ -1,0 +1,22 @@
+# Copyright (c) 2021 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+description: Auto-repeat
+
+compatible: "zmk,behavior-auto-repeat"
+
+include: zero_param.yaml
+
+properties:
+  bindings:
+    type: phandle-array
+    required: true
+  initial-delay-ms:
+    type: int
+    default: 500
+  repeat-delay-ms:
+    type: int
+    default: 250
+  press-duration-ms:
+    type: int
+    default: 10
